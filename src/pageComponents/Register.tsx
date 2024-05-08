@@ -1,8 +1,25 @@
 import React from 'react'
+import RegisterLayout from '../layouts/RegisterLayout'
+import ImagesPath from '../constants/ImagesPaths'
+import Forms from '../components/Forms'
 
-const Register = () => {
+const Register: React.FC = () => {
   return (
-    <div>Register</div>
+    <RegisterLayout>
+      <div className='w-ful  h-[calc(100vh-80px)] flex flex-col justify-center items-center'>
+        <div className="w-full flex flex-col justify-center items-center gap-y-2 py-10">
+          <img 
+            alt={ImagesPath.styledText.registration.alt} 
+            src={ImagesPath.styledText.registration.source}
+            className='h-7'
+          />
+          <p className='text-center font-medium text-[#1C1C1C] text-5xl '>Start your success<br/>journey here!</p>
+        </div>
+        <div className="w-[50vw] h-fit p-10">
+          <Forms.Register />
+        </div>
+      </div>
+    </RegisterLayout>
   )
 }
 

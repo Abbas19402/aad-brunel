@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
-import RootLayout from '../layouts/RootLayout'
-import ImagesPath from '../constants/ImagesPaths'
-import FAQs from '../constants/faq'
-import Accordion from '../components/Accordion'
+import React from 'react'
+import Accordion from '../../components/Accordion'
+import RootLayout from '../../layouts/RootLayout'
+
+import ImagesPath from '../../constants/ImagesPaths'
+import FAQs from '../../constants/faq'
+
+import BannerCarousel from './BannerCorousel'
 
 const Landing: React.FC = () => {
   return (
@@ -18,14 +21,14 @@ const Landing: React.FC = () => {
       </div>
 
       {/* Hero Banner-Corousel */}
-      <div className="border border-black w-full h-32"> Banner carousel section in development </div>
+      <BannerCarousel />
 
       {/* FAQ */}
       <div className="relative h-full w-full p-10">
-        <div className="w-full h-full flex flex-row justify-between bg-[#E8EEE7] min-h-[30rem] rounded-[3rem] py-7 px-10">
+        <div className="w-full h-full flex flex-col lg:flex-row justify-between bg-[#E8EEE7] lg:min-h-[30rem] rounded-[3rem] py-7 px-10">
           {/* Vector section */}
-          <div className="flex flex-col justify-start w-[50%]">
-            <div className="relative flex flex-col items-start gap-[2px] top-[40px] left-[55px]">
+          <div className="flex flex-col justify-start w-full lg:w-[50%]">
+            <div className="relative flex flex-col items-center lg:items-start gap-[2px] lg:top-[40px] lg:left-[55px] my-10">
               <img 
                 alt={ImagesPath.styledText.mind.alt} 
                 src={ImagesPath.styledText.mind.source}   
@@ -41,7 +44,7 @@ const Landing: React.FC = () => {
           </div>
 
           {/* Accordions */}
-          <div className="flex flex-col min-h-full justify-center items-center w-[50%] px-10 gap-y-2">
+          <div className="z-50 lg:z-0 flex flex-col min-h-full justify-center items-center w-full lg:w-[50%] lg:px-10 gap-y-2">
             {FAQs.map((item,index) => (
               <div className='w-full'>
                 <Accordion

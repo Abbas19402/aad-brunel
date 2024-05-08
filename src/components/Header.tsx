@@ -14,13 +14,12 @@ const Header: React.FC = () => {
         <div className="flex flex-row items-center gap-x-2">
           <Button
             title="Get Projects"
-            secondary={true}
+            theme='secondary'
             isLink={true}
             linkPath="/register"
           />
           <Button
             title="Onboard Talent"
-            primary={true}
           />
         </div>
       </div>
