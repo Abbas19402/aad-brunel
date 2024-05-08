@@ -25,23 +25,14 @@ If you prefer a fresh installation:
 1. Clone this repository (assuming you have Git installed):
 
    ```bash
-   git clone [https://github.com/Abbas19402/aad-brunel](https://github.com/Abbas19402/aad-brunel)
+   git clone https://github.com/Abbas19402/aad-brunel
 ```
 
 2. Open project folder
-    ```
     cd aad-brunel
 
-    ```
 3. Install node modules
-    ```
     npm install
 
-    ```
-
 4. Run project
-    ```
     npm run start
-
-    ```
-    
