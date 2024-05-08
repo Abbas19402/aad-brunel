@@ -7,7 +7,7 @@ const BannerCarousel = () => {
   return (
     <div className="w-full h-fit p-10 my-10 flex flex-col lg:flex-row justify-between items-center">
         {/* Hero featured section */}
-        <div className="w-full lg:w-[50%] h-fit relative">
+        <div className="w-full lg:w-[50%] h-fit relative md:mb-24">
             <div className="relative lg:left-[180px] lg:top-[10px] w-fit rounded-3xl overflow-hidden mb-5 mx-auto lg:mx-0">
                 <img
                     alt={ImagesPath.featuredHeroImage.alt}
@@ -16,7 +16,7 @@ const BannerCarousel = () => {
                 />
             </div>
             {/* Stat 1 - ( 40% reduction ) */}
-            <div className="lg:absolute top-[60px] left-[60px] w-[170px] h-[150px] bg-white rounded-2xl shadow-xl">
+            <div className="md:absolute top-[60px] left-[60px] w-[170px] h-[150px] bg-white rounded-2xl shadow-xl">
                 <div className="relative w-full h-full">
                     <div className="absolute -top-3 -left-1 ">
                         <img
@@ -35,7 +35,7 @@ const BannerCarousel = () => {
             </div>
 
             {/* Stat 2 - ( 10 days deployment ) */}
-            <div className="absolute top-[475px] lg:top-[250px] left-[180px] lg:left-[110px] h-14 w-36 rounded-full bg-white shadow-xl">
+            <div className="absolute top-[475px] md:top-[250px] left-[180px] md:left-[110px] h-14 w-36 rounded-full bg-white shadow-xl">
                 <div className="h-full flex flex-row justify-around items-center">
                     <img
                         src={ImagesPath.vectors.rocket.source} 
@@ -50,7 +50,7 @@ const BannerCarousel = () => {
             </div>
 
             {/* Stat 3 - ( 0.5 Million clients ) */}
-            <div className="lg:absolute top-[300px] left-[290px] lg:w-[170px] h-fit py-4 bg-[#002E18] rounded-2xl shadow-xl flex lg:flex-col md:justify-center items-center md:items-baseline lg:items-start my-5">
+            <div className="md:absolute top-[300px] left-[290px] md:w-[170px] h-fit py-4 bg-[#002E18] rounded-2xl shadow-xl flex md:flex-col md:justify-center items-center  enter md:items-start my-5">
                 <div className="flex pt-2 px-3 gap-x-1 items-baseline">
                     <span className='font-bold text-4xl text-white'>$0.5</span>
                     <span className="text-xl text-gray-500">Million</span>

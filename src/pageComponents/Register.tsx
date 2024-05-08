@@ -6,7 +6,7 @@ import Forms from '../components/Forms'
 const Register: React.FC = () => {
   return (
     <RegisterLayout>
-      <div className='w-ful  h-[calc(100vh-80px)] flex flex-col justify-center items-center'>
+      <div className='w-full h-[calc(100vh-80px)] flex flex-col justify-center items-center'>
         <div className="w-full flex flex-col justify-center items-center gap-y-2 py-10">
           <img 
             alt={ImagesPath.styledText.registration.alt} 
@@ -15,7 +15,7 @@ const Register: React.FC = () => {
           />
           <p className='text-center font-medium text-[#1C1C1C] text-5xl '>Start your success<br/>journey here!</p>
         </div>
-        <div className="w-[50vw] h-fit p-10">
+        <div className="w-full lg:w-[50vw] h-fit lg:p-10">
           <Forms.Register />
         </div>
       </div>

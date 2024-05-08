@@ -38,7 +38,7 @@ const FormSubmissionSuccess: React.FC = () => {
                     className='h-7'
                 />
                 <p className='text-center font-medium text-[#1C1C1C] text-5xl '>Congratulations</p>
-                <p className='text-gray-600 text-2xl'>Your request has been successfully submitted to us. We<br/>will validate your information and reach out to your<br/>shortly with updates</p>
+                <p className='text-gray-600 text-2xl'>Your request has been successfully<br className='lg:hidden block'/> submitted to us. We <br className='hidden lg:block'/>will validate<br className='lg:hidden block'/> your information and reach out<br className='lg:hidden block'/> to your <br className='hidden lg:block'/>shortly with<br className='lg:hidden block'/> updates</p>
             </div>
 
             <div className="absolute w-full bottom-0 flex justify-center items-center gap-x-1 my-2">

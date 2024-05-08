@@ -17,7 +17,7 @@ const Landing: React.FC = () => {
           src={ImagesPath.styledText.success.source}
           className='h-7'
         />
-        <p className='text-center font-medium text-[#1C1C1C] text-5xl '>Every success journey<br/>We've encountered.</p>
+        <p className='text-center font-medium text-[#1C1C1C] text-4xl lg:text-5xl '>Every success journey<br/>We've encountered.</p>
       </div>
 
       {/* Hero Banner-Corousel */}

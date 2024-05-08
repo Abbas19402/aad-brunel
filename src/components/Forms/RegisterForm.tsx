@@ -43,7 +43,7 @@ const RegisterForm: React.FC = () => {
 
     return (
         <form onSubmit={registerFormData}>
-            <div className="mx-auto w-80 flex flex-col justify-center items-center gap-y-10">
+            <div className="mx-auto w-full lg:w-80 flex flex-col justify-center items-center gap-y-10">
                 <input 
                     type="text" 
                     name="username" 
